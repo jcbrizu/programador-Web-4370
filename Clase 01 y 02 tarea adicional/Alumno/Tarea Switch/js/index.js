@@ -34,7 +34,6 @@ switch (carac) {
     console.log('Es una consonante')
     break
   default:
-    document.write('No es una letra')
-    alert('No es una letra')
+    console.log(carac + ' Es un simbolo')
     break
 }
