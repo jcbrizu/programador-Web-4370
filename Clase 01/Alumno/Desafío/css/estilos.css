@@ -32,6 +32,7 @@ h1 {
   text-align: center;
   font-size: 2em;
   font-weight: 50;
+  margin-top: 2%;
 }
 
 .cajaalumn {
@@ -65,7 +66,7 @@ h1 {
   font-size: 1em;
 }
 
-.botones {
+.botonazul {
   width: 94%;
   height: 40px;
   background-color: #6ba5f2;
@@ -79,19 +80,6 @@ h1 {
   border-radius: 5px;
 }
 
-.inputchico {
-  width: 45%;
-  height: 40px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: gray;
-  margin: px;
-  padding: 3px;
-  padding-left: 10px;
-  font-size: 1em;
-}
-
 .botonverde {
   width: 45%;
   height: 40px;
@@ -102,7 +90,7 @@ h1 {
   border-style: solid;
   border-width: 0.5px;
   border-radius: 5px;
-  margin: 5px;
+  margin: 10px;
   color: white;
 }
 
@@ -116,6 +104,6 @@ h1 {
   border-style: solid;
   border-width: 0.5px;
   border-radius: 5px;
-  margin: 5px;
+  margin: 10px;
   color: white;
 }
