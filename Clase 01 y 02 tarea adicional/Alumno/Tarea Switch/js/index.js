@@ -1,6 +1,5 @@
 var carac = prompt('Ingrese un caracter')
 var carac = carac.toLowerCase()
-var boolean1 = true
 
 switch (carac) {
   case 'a':
@@ -35,9 +34,7 @@ switch (carac) {
     console.log('Es una consonante')
     break
   default:
-    if ((boolean1 = true)) {
-      document.write('No es una letra')
-      alert('No es una letra')
-    }
+    document.write('No es una letra')
+    alert('No es una letra')
     break
 }
