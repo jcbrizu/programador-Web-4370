@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.cajas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cajaform {
+  display: inline-block;
+  width: 50%;
+  height: 500px;
+  margin: 10px;
+  text-align: center;
+}
+
+.cajaalumn {
+  display: inline-block;
+  width: 50%;
+  height: 500px;
+  margin: 10px;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 50;
+}
+
+.cajaalumn {
+  text-align: center;
+}
+
+.cajaalumn h2 {
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  font-weight: 50;
+}
+
+.cajaform h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: 50;
+}
+
+.inputcuadro {
+  width: 45%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: gray;
+  margin: 10px;
+  padding: 3px;
+  padding-left: 10px;
+  font-size: 1em;
+}
+
+.botones {
+  width: 94%;
+  height: 40px;
+  background-color: #6ba5f2;
+  font-size: 1em;
+  color: white;
+  margin: 10px;
+  padding: 3px;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 5px;
+}
+
+.inputchico {
+  width: 45%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: gray;
+  margin: px;
+  padding: 3px;
+  padding-left: 10px;
+  font-size: 1em;
+}
+
+.botonverde {
+  width: 45%;
+  height: 40px;
+  background-color: #28a745;
+  font-size: 1em;
+  padding: 3px;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+}
+
+.botonrojo {
+  width: 45%;
+  height: 40px;
+  background-color: #f28891;
+  font-size: 1em;
+  padding: 3px;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+}
