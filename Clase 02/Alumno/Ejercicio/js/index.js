@@ -1,5 +1,6 @@
-var dia = prompt('Ingrese un dia')
+var dia = prompt('Ingrese dia')
 var diaMinuscula = dia.toLowerCase()
+
 switch (diaMinuscula) {
   case 'lunes':
   case 'martes':
@@ -7,13 +8,12 @@ switch (diaMinuscula) {
   case 'jueves':
   case 'viernes':
     console.log('dia habil')
-
-    break
+    break;
   case 'sabado':
   case 'domingo':
-    console.log('es fin de semana')
-    break
+    console.log('finde :)')
+    break;
   default:
-    console.log('no es valido')
-    break
+    console.log('No es un dia valido')
+    break;
 }

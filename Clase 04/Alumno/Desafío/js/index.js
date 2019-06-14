@@ -1,3 +1,28 @@
+
+function buscarAlumnoPorNombre(nombre, listaAlumnos) {
+  var nombreLower = nombre.toLowerCase();
+  for (var i = 0; i < listaAlumnos.length; i++) {
+    if (listaAlumnos[i].firstName.toLowerCase() === nombreLower) {
+      return i
+    }
+  }
+  return -1
+}
+
+function buscarAlumnoPorNombreYApellido(nombre, apellido, listaAlumnos) {
+  var nombreLower = nombre.toLowerCase();
+  var apellidoLower = apellido.toLowerCase();
+  for (var i = 0; i < listaAlumnos.length; i++) {
+    if (listaAlumnos[i].firstName.toLowerCase() === nombreLower
+      && listaAlumnos[i].lastName.toLowerCase() === apellidoLower) {
+      return i
+    }
+  }
+  return -1
+}
+
+
+>>>>>>> 18ca07db7a7828bed4aa3670e70e7eafedb6d0d7
 var studentsList = [
   {
     firstName: 'Juan',
@@ -20,17 +45,8 @@ var studentsList = [
     dni: 45678983
   }
 ]
-
 var nombre = prompt('Ingrese nombre: ')
-var resultado = buscarAlumnoPorNombre(nombre, studentsList)
-console.log(resultado)
+var apellido = prompt('Ingrese apellido: ')
+var posicion = buscarAlumnoPorNombreYApellido(nombre, apellido, studentsList);
+console.log(posicion)
 
-function buscarAlumnoPorNombre (nombre, listaAlumnos) {
-  var nombreLower = nombre.toLowerCase()
-  for (var i = 0; i < listaAlumnos.length; i++) {
-    if (listaAlumnos[i].firstName.toLowerCase() === nombreLower) {
-      return i
-    }
-  }
-  return -1
-}

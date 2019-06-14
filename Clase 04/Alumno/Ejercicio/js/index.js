@@ -1,9 +1,14 @@
-var examResults = [ 7, 5, 6, 4, 3, 2, 8 ]
+var resultados = [7, 5, 6, 4, 3, 2, 8];
 
-function promedio (examResults) {
-  var acumulador = 0
-  for (var i = 0; i < examResults.length; i += 1) {
-    var acumuladorDeNumeros = acumulador + examResults[i]
+
+function promedio(resultados) {
+  var acumulador = 0;
+  for (var i = 0; i < resultados.length; i += 1) {
+    acumulador = acumulador + resultados[i]
+
   }
-  return acumuladorDeNumeros / examResults.length
+  return acumulador / resultados.length
+
 }
+
+console.log(promedio(resultados))
