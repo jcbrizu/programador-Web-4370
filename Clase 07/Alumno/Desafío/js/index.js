@@ -1,10 +1,10 @@
 function getLocalList(key) {
-  //  validar si key es string, si no lo es return false
+
   var keyIsString = typeof key === 'string'
   if (!keyIsString) {
     return false
   }
-  // traer item del localStorage para esa key.
+
   var valor = localStorage.getItem(key)
 
   if (!valor) {
