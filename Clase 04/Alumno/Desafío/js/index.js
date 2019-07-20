@@ -36,7 +36,6 @@ var apellido = prompt('Ingrese apellido: ')
 var posicion = buscarAlumnoPorNombreYApellido(nombre, apellido, studentsList);
 console.log(posicion)
 
-=======
+
 let a = new Pepe('grillo');
 a.sayNombre()
->>>>>>> cedbc3697f32c8fea2b1bc384e4c9e12be144193
