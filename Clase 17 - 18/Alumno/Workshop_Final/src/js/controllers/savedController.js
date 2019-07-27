@@ -1,9 +1,9 @@
-import { savePerson, isSaved } from '../utils/dataStore'
+import { savePerson, isSaved, dataStore } from '../utils/dataStore'
 var nextPage
 var index
 var characters
 
-function peopleController() {
+function savedController() {
   $('#root').load('./partials/people.html', function () {
     addEventToSeeMoreButton()
     nextPage = 'https://swapi.co/api/people/'
@@ -44,21 +44,7 @@ var dictionary = {
   red: 'rojo',
   yellow: 'amarillo',
   brown: 'marron',
-  'blue-gray': 'azul grisaseo',
-  hazel: 'avellana',
-  unknown: 'desconocido',
-  black: 'negro',
-  dark: 'oscuro',
-  white: 'blanco',
-  'green, yellow': 'verde, amarillo',
-  orange: 'naranja',
-  pink: 'rosa',
-  'red, blue': 'rojo, azul',
-  gold: 'dorado',
-  'n/a': 'N/D',
-  hermaphrodite: 'hermafrodita',
-  none: 'N/D'
-
+  'blue-gray': 'azul grisado'
 }
 
 
@@ -112,4 +98,4 @@ function addEventToSaveButton(selector) {
 
 
 
-export default peopleController
+export default savedController
