@@ -1,4 +1,6 @@
 import { savePerson, isSaved } from '../utils/dataStore'
+import { translateToSpanish } from '../utils/dictionary'
+import { getId } from '../utils/utils'
 var nextPage
 var index
 var characters
@@ -14,9 +16,6 @@ function peopleController() {
     //.fail(function)
   })
 }
-function getId(person) {
-  return parseInt(person.url.split('/')[5])
-}
 
 function handleData(data) {
   var people = data.results
@@ -30,13 +29,14 @@ function handleData(data) {
       renderPerson('#tableBody', person, id)
     }
   }
-  console.log(characters)
+
   if (!nextPage) {
     $('#seeMore').hide()
   }
   $('#seeMore').attr("disabled", false)
 }
 
+<<<<<<< HEAD
 var dictionary = {
   male: 'Masculino',
   female: 'Femenino',
@@ -71,6 +71,8 @@ function translateToSpanish(wordInEnglish) {
   return word
 }
 
+=======
+>>>>>>> c150bc4177836d7b78188925d0001517e6b49601
 function renderPerson(anclaSelector, person, id) {
   $(anclaSelector).append(`
       <tr id="person-${id}">

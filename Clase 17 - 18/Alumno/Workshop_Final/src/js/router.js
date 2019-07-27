@@ -12,10 +12,9 @@ function router() {
 
   crossroads.addRoute('#/contact', contactController)
 
-  crossroads.addRoute('#/people', peopleController)
-
   crossroads.addRoute('#/local-storage', savedController)
 
+  crossroads.addRoute('#/people', peopleController)
   // En cada cambio del # va a verificar las rutas
   $(window).on('hashchange', function () {
     crossroads.parse(window.location.hash)
