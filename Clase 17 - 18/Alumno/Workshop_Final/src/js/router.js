@@ -3,9 +3,15 @@ import homeController from './controllers/homeController'
 import contactController from './controllers/contactController'
 import peopleController from './controllers/peopleController'
 import savedController from './controllers/savedController'
+import { searchController } from './controllers/searchController'
+import { allValidationsOk, validateEmail, validateNotEmptyField } from './utils/validations';
+
 
 homeController()
-
+searchController()
+// allValidationsOk()
+// validateEmail()
+// validateNotEmptyField()
 function router() {
 
   crossroads.addRoute('#/home', homeController)
@@ -15,6 +21,7 @@ function router() {
   crossroads.addRoute('#/local-storage', savedController)
 
   crossroads.addRoute('#/people', peopleController)
+
   // En cada cambio del # va a verificar las rutas
   $(window).on('hashchange', function () {
     crossroads.parse(window.location.hash)
