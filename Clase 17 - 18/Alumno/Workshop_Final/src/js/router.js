@@ -4,14 +4,12 @@ import contactController from './controllers/contactController'
 import peopleController from './controllers/peopleController'
 import savedController from './controllers/savedController'
 import { searchController } from './controllers/searchController'
-import { allValidationsOk, validateEmail, validateNotEmptyField } from './utils/validations';
+
 
 
 homeController()
 searchController()
-// allValidationsOk()
-// validateEmail()
-// validateNotEmptyField()
+
 function router() {
 
   crossroads.addRoute('#/home', homeController)

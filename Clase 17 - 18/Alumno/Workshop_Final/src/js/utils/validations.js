@@ -56,4 +56,6 @@ function allValidationsOk() {
   }
 }
 
+
+
 export { validateNotEmptyField, validateEmail, allValidationsOk }
